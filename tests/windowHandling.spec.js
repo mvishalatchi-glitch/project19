@@ -15,7 +15,7 @@ test('dynamic xpath', async ({ browser }) => {
     const [newPage] = await Promise.all([
         context.waitForEvent('page'),
 
-        page.click('//div[text()="Relevance"]//ancestor::div[@class="QSCKDh eRsYMo col-12-12"]//following-sibling::div[@class="lvJbVL col-12-12"//descendant::div[text()="Apple iPhone 17 Pro (Deep Blue, 512 GB)"])
+        page.click('//div[text()="Relevance"]//ancestor::div[@class="QSCKDh eRsYMo col-12-12"]//following-sibling::div[@class="lvJbVL col-12-12"//descendant::div[text()="Apple iPhone 17 Pro (Deep Blue, 512 GB)"]')
     ]);
 
     await newPage.waitForLoadState();
