@@ -36,6 +36,6 @@ test('Alert Handling', async ({ page }) => {
 
     console.log(text);
 
-    await expect(text).toContain("Hello Bro");
+    await expect(text).toContain("Hello Dude");
 
 });
